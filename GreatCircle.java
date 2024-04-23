@@ -12,9 +12,10 @@ on the surface of a sphere, where the path is constrained to be along the surfac
 
 public class GreatCircle {
     public static void main(String[] args) {
+
         double x1 = Math.toRadians(Double.parseDouble(args[0]));
-        double x2 = Math.toRadians(Double.parseDouble(args[2]));
         double y1 = Math.toRadians(Double.parseDouble(args[1]));
+        double x2 = Math.toRadians(Double.parseDouble(args[2]));
         double y2 = Math.toRadians(Double.parseDouble(args[3]));
         double r = 6371.0;
 
@@ -23,6 +24,6 @@ public class GreatCircle {
         double a3 = Math.sqrt(a1 + a2);
         double distance = 2 * r * Math.asin(a3);
 
-        System.out.println(distance);
+        System.out.println(distance + " kilometers");
     }
 }
